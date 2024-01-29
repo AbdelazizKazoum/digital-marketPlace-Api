@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,27 @@
       "type": "decimal"
     },
     "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "smartphones",
+        "laptops",
+        "fragrances",
+        "skincare"
+      ]
     }
   }
 }
